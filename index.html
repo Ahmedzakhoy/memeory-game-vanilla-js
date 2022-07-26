@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script type="module" defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <form class="start-screen screen">
+        <select name="difficulty" id="difficulty">
+          <option value="easy">easy</option>
+          <option value="intermediate" selected="selected">intermediate</option>
+          <option value="difficult">difficult</option>
+        </select>
+        <input required type="text" id="user-name" />
+        <button type="submit">Start Game</button>
+      </form>
+      <div class="end-screen screen hidden">
+        <div>Great Job Person, you won the game, you Score is 00 in the intermediate level</div>
+        <button>Play Again</button>
+      </div>
+
+      <div class="information-container">
+        <span>Hello: <span class="name"></span></span>
+        <span><span class="difficulty"></span> level</span>
+        <div class="remaining-tries">remaining tries: <span>20</span></div>
+      </div>
+
+      <div class="cards-container">
+        <div class="card" data-identifier="css">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/css.png" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="css">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/css.png" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="html">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/html.png" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="html">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/html.png" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="js">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/js.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="js">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/js.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="mern">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/mern.png" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="mern">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/mern.png" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="mongo">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/mongo.png" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="mongo">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/mongo.png" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="next">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/next.png" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="next">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/next.png" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="node">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/node.png" alt="" />
+          </div>
+        </div>
+        <div class="card" data-identifier="node">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/node.png" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-identifier="react">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/react.png" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-identifier="react">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/react.png" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-identifier="sass">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/sass.png" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-identifier="sass">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/sass.png" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-identifier="ts">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/ts.png" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-identifier="ts">
+          <div class="front side"></div>
+          <div class="back side">
+            <img src="imgs/ts.png" alt="" />
+          </div>
+
+        </div>
+
+    </div>
+    <audio id="success" src="sounds/success.mp3" preload="auto"></audio>
+  </body>
+</html>
